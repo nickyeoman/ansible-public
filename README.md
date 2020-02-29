@@ -1,0 +1,3 @@
+# ansible
+
+Private Ansible repository.
