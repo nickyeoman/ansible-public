@@ -1,0 +1,5 @@
+# git-user playbook
+#
+- hosts: xfce
+  roles:
+    - atom

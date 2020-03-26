@@ -1,0 +1,9 @@
+---
+
+- apt_repository:
+    repo: 'ppa:webupd8team/atom'
+
+- name: Update cache & Install atom
+  apt:
+    update_cache: yes
+    name: atom

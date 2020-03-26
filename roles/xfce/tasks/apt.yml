@@ -1,0 +1,22 @@
+---
+- name: Install packages using apt
+  apt:
+    pkg:
+      - scite
+      - git-cola
+      - meld
+      - cheese
+      - vlc
+      - clementine
+      - filezilla
+      - gimp
+      - gnucash
+      - gparted
+      - grsync
+      - krename
+      - net-tools
+      - chromium-browser
+    state: present
+
+#csstidy
+#ruby-sass

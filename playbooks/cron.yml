@@ -1,0 +1,21 @@
+# main playbook
+
+- hosts: all
+  pre_tasks:
+    - name: apt update
+      apt:
+        update_cache: yes
+
+  roles:
+    - timezone
+    - docker_install
+    - apt
+    - git_user
+    - bin
+    - cron
+
+- hosts: xfce
+  roles:
+    - xfce
+    - atom
+    - simplescreenrecorder

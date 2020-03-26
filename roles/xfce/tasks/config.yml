@@ -1,0 +1,6 @@
+---
+
+- name: terminal config
+  copy:
+    src: terminalrc
+    dest: /home/{{username}}/.config/xfce4/terminal/terminalrc

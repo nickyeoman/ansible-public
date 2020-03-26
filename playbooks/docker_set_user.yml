@@ -1,0 +1,20 @@
+---
+- hosts: all
+
+###############################################################################
+# Varibles, change to your requirements
+###############################################################################  
+  vars:
+    your_username: nick
+
+###############################################################################
+# Docker allow user to use docker
+###############################################################################
+  tasks:        
+    - name: Allow defined user to use docker, usermod -aG docker $USER
+      user:
+        name:   "{{ your_username }}"
+        shell:  /bin/bash
+        group:  "{{ your_username }}"
+        groups: docker, sudo, adm, dip, plugdev, lxd
+        state:  present

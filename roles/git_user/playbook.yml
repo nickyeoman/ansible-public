@@ -1,0 +1,5 @@
+# git-user playbook
+#
+- hosts: all
+  roles:
+    - git_user

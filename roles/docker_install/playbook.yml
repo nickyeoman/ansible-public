@@ -1,0 +1,5 @@
+# playbook
+#
+- hosts: all
+  roles:
+    - docker_install

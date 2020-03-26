@@ -1,0 +1,26 @@
+---
+
+- name: set environment
+  copy:
+    src: environment
+    dest: /etc/environment
+    mode: 644
+    owner: root
+    group: root
+    force: yes
+
+- name: bash aliases for root
+  copy:
+    src: bash_aliases
+    dest: /root/.bash_aliases
+    mode: 644
+    owner: root
+    group: root
+
+- name: bash aliases for user
+  copy:
+    src: bash_aliases
+    dest: /home/{{username}}/.bash_aliases
+    mode: 644
+    owner: {{username}}
+    group: {{username}}

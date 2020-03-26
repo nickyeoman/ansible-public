@@ -1,0 +1,9 @@
+---
+
+- apt_repository:
+    repo: 'ppa:maarten-baert/simplescreenrecorder'
+
+- name: Update cache & install screen recorder
+  apt:
+    update_cache: yes
+    name: simplescreenrecorder

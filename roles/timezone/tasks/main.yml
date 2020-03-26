@@ -1,0 +1,3 @@
+---
+- name: Set timezone to Vancouver
+  timezone: name=America/Vancouver

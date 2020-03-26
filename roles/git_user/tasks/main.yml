@@ -1,0 +1,18 @@
+---
+# https://gist.github.com/eguchish/42cacc4b8452b30dce05c79a8fa3c259
+# https://docs.ansible.com/ansible/latest/modules/git_config_module.html
+
+- name: Configure Git
+  git_config:
+    name="{{ item.name }}"
+    scope=global
+    value="{{ item.value }}"
+  with_items:
+    - {name: "user.name",   value: "{{ git_username}}" }
+    - {name: "user.email",  value: "{{ git_email}}" }
+    - {name: "cola.spellcheck", value: "false" }
+    - {name: "core.editor", value: "vim" }
+    - {name: "color.ui", value: "auto" }
+
+
+

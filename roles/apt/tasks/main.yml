@@ -1,0 +1,17 @@
+---
+- name: Install packages using apt
+  apt: 
+    pkg: 
+      - nmap
+      - p7zip-full
+      - vnstat
+      - iftop
+      - whois
+      - ncdu
+      - jq
+      - lynx
+      - zsh
+      - tree
+      - pwgen
+      - netdata
+    state: present

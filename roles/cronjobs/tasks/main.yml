@@ -1,0 +1,4 @@
+---
+
+- name: Remove all existing cronjobs
+  shell: crontab -r
