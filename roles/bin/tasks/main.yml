@@ -20,7 +20,7 @@
 - name: bash aliases for user
   copy:
     src: bash_aliases
-    dest: /home/{{username}}/.bash_aliases
+    dest: /home/{{ your_username }}/.bash_aliases
     mode: 644
-    owner: {{username}}
-    group: {{username}}
+    owner: "{{ your_username }}"
+    group: "{{ your_username }}"

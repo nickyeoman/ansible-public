@@ -2,3 +2,22 @@
 
 - name: Remove all existing cronjobs
   shell: crontab -r
+
+- name: Cron environment Path
+  cron:
+    name: PATH
+    env: yes
+    value: /usr/local/sbin:/usr/local/bin:/usr/sbin/:/usr/bin/:/bin:/home/nick/Git/ansible-public/:/snap/bin
+
+- name: Cron environment shell
+  cron:
+    name: SHELL
+    env: yes
+    value: /bin/bash
+
+- name: Cron tmp test
+  cron:
+    name: test
+    minute: '5'
+    hour: '3'
+    job: 'vnstat > /root/vnstat.log'

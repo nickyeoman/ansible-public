@@ -1,4 +1,5 @@
 # main playbook
+# TODO: show how to actually run this from cron
 
 - hosts: all
   pre_tasks:
@@ -12,7 +13,8 @@
     - apt
     - git_user
     - bin
-    - cron
+    - cronjobs
+    - git_repos
 
 - hosts: xfce
   roles:
