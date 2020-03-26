@@ -4,7 +4,7 @@
   copy:
     src: environment
     dest: /etc/environment
-    mode: 644
+    mode: 0644
     owner: root
     group: root
     force: yes
@@ -13,7 +13,7 @@
   copy:
     src: bash_aliases
     dest: /root/.bash_aliases
-    mode: 644
+    mode: 0644
     owner: root
     group: root
 
@@ -21,6 +21,6 @@
   copy:
     src: bash_aliases
     dest: /home/{{ your_username }}/.bash_aliases
-    mode: 644
+    mode: 0764
     owner: "{{ your_username }}"
     group: "{{ your_username }}"
