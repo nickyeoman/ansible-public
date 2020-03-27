@@ -1,0 +1,5 @@
+# playbook
+#
+- hosts: xfce
+  roles:
+    - nextcloud-client

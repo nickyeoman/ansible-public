@@ -15,6 +15,7 @@
     - bin
     - cronjobs
     - git_repos
+    - nextcloud-client
 
 - hosts: xfce
   roles:

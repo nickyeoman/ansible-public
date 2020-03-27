@@ -1,0 +1,9 @@
+---
+
+- apt_repository:
+    repo: 'ppa:nextcloud-devs/client'
+
+- name: Update cache & Install nextcloud client
+  apt:
+    update_cache: yes
+    name: nextcloud-client
