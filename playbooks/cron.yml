@@ -16,6 +16,7 @@
     - cronjobs
     - git_repos
     - nextcloud-client
+    - etchosts
 
 - hosts: xfce
   roles:

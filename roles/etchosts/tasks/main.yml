@@ -1,0 +1,14 @@
+---
+
+- name: etc/hosts
+  blockinfile:
+    path: /etc/hosts
+    block: |
+      {{ item.ip }} {{ item.name }}
+    marker: '# {mark} ANSIBLE MANGED BLOCK {{ item.name }}'
+  loop:
+    - {name: gitea.nickyeoman.com, ip: 5.148.172.17 }
+    - {name: nica.nickyeoman.com, ip: 192.168.69.212 }
+    - {name: nixbuntu.nickyeoman.com, ip: 192.168.69.150 }
+    - {name: portainer.nickyeoman.com, ip: 127.0.0.1 }
+    - {name: proxy.nickyeoman.com, ip: 127.0.0.1 }
