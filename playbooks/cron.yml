@@ -8,18 +8,19 @@
         update_cache: yes
 
   roles:
-    - timezone
-    - docker_install
     - apt
-    - git_user
     - bin
     - cronjobs
-    - git_repos
-    - nextcloud-client
+    - docker_install
     - etchosts
+    - git_repos
+    - git_user
+    - hugo
+    - nextcloud-client
+    - timezone
 
 - hosts: xfce
   roles:
-    - xfce
     - atom
     - simplescreenrecorder
+    - xfce

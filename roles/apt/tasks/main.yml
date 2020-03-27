@@ -1,7 +1,7 @@
 ---
 - name: Install packages using apt
-  apt: 
-    pkg: 
+  apt:
+    pkg:
       - nmap
       - p7zip-full
       - vnstat
