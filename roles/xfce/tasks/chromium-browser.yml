@@ -1,0 +1,9 @@
+---
+
+- name: Install packages using apt
+  apt:
+    pkg:
+      - chromium-browser
+    state: present
+
+#- name: create profiles chromium --profile-directory="Nicholas" %U

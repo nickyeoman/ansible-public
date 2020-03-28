@@ -27,3 +27,4 @@
 
 - include: apt.yml
 - include: config.yml
+- include: chromium-browser.yml
