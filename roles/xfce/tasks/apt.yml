@@ -16,6 +16,7 @@
       - krename
       - net-tools
       - chromium-browser
+      - firefox
     state: present
 
 #csstidy
