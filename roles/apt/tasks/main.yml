@@ -4,6 +4,7 @@
     pkg:
       - nmap
       - p7zip-full
+      - p7zip-rar
       - vnstat
       - iftop
       - whois
@@ -14,4 +15,5 @@
       - tree
       - pwgen
       - netdata
+      - zip
     state: present

@@ -13,7 +13,8 @@
     - xfce4
     - xfce4-whiskermenu-plugin
     - xfce4-terminal
-    - mugshot
+    - xfpanel-switch #save panel layouts
+    - mugshot # for login
     # Screensavers
     - xscreensaver
     - xscreensaver-gl-extra

@@ -5,6 +5,8 @@
     path: "{{ gitpath }}"
     state: directory
     mode: '0750'
+    owner: "{{ your_username }}"
+    group: "{{ your_username }}"
 
 - name: Clone NYScripts repo
   git:

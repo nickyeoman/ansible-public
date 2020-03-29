@@ -4,3 +4,13 @@
   copy:
     src: terminalrc
     dest: /home/{{username}}/.config/xfce4/terminal/terminalrc
+
+- name: customize panels
+  copy:
+    src: panel/
+    dest: /home/{{username}}/.config/xfce4/panel/
+
+- name: terminal config
+  copy:
+    src: xfce4-panel.xml
+    dest: /home/{{username}}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
