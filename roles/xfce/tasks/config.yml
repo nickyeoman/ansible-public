@@ -3,20 +3,20 @@
 - name: terminal config
   copy:
     src: terminalrc
-    dest: /home/{{username}}/.config/xfce4/terminal/terminalrc
+    dest: /home/{{ xfce_username }}/.config/xfce4/terminal/terminalrc
 
 - name: xfce Thunar settings
   copy:
-    src: /home/{{username}}/Git/ansible-public/roles/xfce/files/Thunar
-    dest: /home/{{username}}/.config/Thunar
+    src: /home/{{ xfce_username }}/Git/ansible-public/roles/xfce/files/Thunar
+    dest: /home/{{ xfce_username }}/.config/Thunar
+    owner: "{{ xfce_username }}"
+    group: "{{ xfce_username }}"
     force: yes
-    user: {{username}}
-    group: {{username}}
 
 - name: xfce panel settings
   copy:
-    src: /home/{{username}}/Git/ansible-public/roles/xfce/files/xfce4
-    dest: /home/{{username}}/.config/xfce4
+    src: /home/{{ xfce_username }}/Git/ansible-public/roles/xfce/files/xfce4
+    dest: /home/{{ xfce_username }}/.config/xfce4
+    owner: "{{ xfce_username }}"
+    group: "{{ xfce_username }}"
     force: yes
-    user: {{username}}
-    group: {{username}}
