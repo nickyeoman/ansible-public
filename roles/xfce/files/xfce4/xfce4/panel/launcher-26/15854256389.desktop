@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=Chromium Web Browser
+Name=Chrome Nick
 GenericName=Web Browser
 Comment=Access the Internet
-Exec=chromium-browser --profile-directory="Nicholas" %U
+Exec=chromium-browser -profile-directory="Nick" %U
 Terminal=false
 X-MultipleArgs=false
 Type=Application
-Icon=chromium-browser
+Icon=audio-player
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true

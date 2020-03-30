@@ -5,12 +5,18 @@
     src: terminalrc
     dest: /home/{{username}}/.config/xfce4/terminal/terminalrc
 
-- name: customize panels
+- name: xfce Thunar settings
   copy:
-    src: panel/
-    dest: /home/{{username}}/.config/xfce4/panel/
+    src: /home/{{username}}/Git/ansible-public/roles/xfce/files/Thunar
+    dest: /home/{{username}}/.config/Thunar
+    force: yes
+    user: {{username}}
+    group: {{username}}
 
-- name: terminal config
+- name: xfce panel settings
   copy:
-    src: xfce4-panel.xml
-    dest: /home/{{username}}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+    src: /home/{{username}}/Git/ansible-public/roles/xfce/files/xfce4
+    dest: /home/{{username}}/.config/xfce4
+    force: yes
+    user: {{username}}
+    group: {{username}}
