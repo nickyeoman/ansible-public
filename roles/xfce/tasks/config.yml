@@ -4,19 +4,3 @@
   copy:
     src: terminalrc
     dest: /home/{{ xfce_username }}/.config/xfce4/terminal/terminalrc
-
-- name: xfce Thunar settings
-  copy:
-    src: /home/{{ xfce_username }}/Git/ansible-public/roles/xfce/files/Thunar
-    dest: /home/{{ xfce_username }}/.config/Thunar
-    owner: "{{ xfce_username }}"
-    group: "{{ xfce_username }}"
-    force: yes
-
-- name: xfce panel settings
-  copy:
-    src: /home/{{ xfce_username }}/Git/ansible-public/roles/xfce/files/xfce4
-    dest: /home/{{ xfce_username }}/.config/xfce4
-    owner: "{{ xfce_username }}"
-    group: "{{ xfce_username }}"
-    force: yes
