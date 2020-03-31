@@ -28,8 +28,8 @@
 
 - name: Clone ansible public repo
   git:
-    repo: git@github.com:nickyeoman/docker-compose-cookbooks.git
-    dest: "{{ gitpath }}/docker-cookbooks"
+    repo: git@github.com:nickyeoman/ansible-public.git
+    dest: "{{ gitpath }}/ansible-public"
     key_file: "{{ gitkey }}"
     accept_hostkey: yes
     version: master
