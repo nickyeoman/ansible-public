@@ -16,4 +16,6 @@
       - pwgen
       - netdata
       - zip
+      # For gpg key creation on passbolt
+      - rng-tools
     state: present
