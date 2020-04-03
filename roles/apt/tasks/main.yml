@@ -13,9 +13,12 @@
       - lynx
       - zsh
       - tree
-      - pwgen
       - netdata
       - zip
+      # used in alias'
+      - pwgen
+      # for traefik
+      - apache2-utils
       # For gpg key creation on passbolt
       - rng-tools
     state: present

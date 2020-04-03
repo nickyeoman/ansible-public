@@ -16,6 +16,7 @@
       - krename
       - net-tools
       - firefox
+      - thunderbird
     state: present
 
 #csstidy
