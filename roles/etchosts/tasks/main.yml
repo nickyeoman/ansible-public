@@ -13,3 +13,4 @@
     - {name: portainer.nickyeoman.com, ip: 127.0.0.1 }
     - {name: proxy.nickyeoman.com, ip: 127.0.0.1 }
     - {name: passbolt.nickyeoman.com, ip: 127.0.0.1 }
+    - {name: nextcloud.nickyeoman.com, ip: 127.0.0.1 }
