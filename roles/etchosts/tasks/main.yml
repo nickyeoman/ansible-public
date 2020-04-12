@@ -7,9 +7,18 @@
       {{ item.ip }} {{ item.name }}
     marker: '# {mark} ANSIBLE MANGED BLOCK {{ item.name }}'
   loop:
+    # Production
     - {name: gitea.nickyeoman.com, ip: 5.148.172.17 }
+    # Hosts
     - {name: nica.nickyeoman.com, ip: 192.168.69.212 }
-    - {name: nixbuntu.nickyeoman.com, ip: 192.168.69.100 }
+    - {name: nixbuntu.nickyeoman.com, ip: 192.168.69.215 }
+    - {name: danica.nickyeoman.com, ip: 192.168.69.216 }
+    - {name: kendra.nickyeoman.com, ip: 192.168.69.202 }
+    - {name: gate.nickyeoman.com, ip: 192.168.69.200 }
+    - {name: nas.nickyeoman.com, ip: 192.168.69.210 }
+    # Internal Applications
+    - {name: chat.nickyeoman.com, ip: 192.168.69.215 }
+    # Local Applications
     - {name: portainer.nickyeoman.com, ip: 127.0.0.1 }
     - {name: proxy.nickyeoman.com, ip: 127.0.0.1 }
     - {name: passbolt.nickyeoman.com, ip: 127.0.0.1 }

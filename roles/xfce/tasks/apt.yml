@@ -17,6 +17,8 @@
       - net-tools
       - firefox
       - thunderbird
+      - lxd
+      - recordmydesktop
     state: present
 
 #csstidy
