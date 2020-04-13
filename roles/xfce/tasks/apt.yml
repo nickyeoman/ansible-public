@@ -17,6 +17,7 @@
       - net-tools
       - firefox
       - thunderbird
+      - fonts-noto-color-emoji
       - lxd
       - recordmydesktop
     state: present
