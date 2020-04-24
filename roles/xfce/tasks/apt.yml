@@ -18,8 +18,11 @@
       - firefox
       - thunderbird
       - fonts-noto-color-emoji
-      - lxd
       - recordmydesktop
+      # pdf viewer
+      - okular
+      # for xubuntu users
+      - lxd
     state: present
 
 #csstidy

@@ -15,6 +15,7 @@
       - tree
       - netdata
       - zip
+      - engrampa
       # used in alias'
       - pwgen
       # for traefik

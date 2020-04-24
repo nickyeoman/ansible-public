@@ -10,16 +10,24 @@
     # Production
     - {name: gitea.nickyeoman.com, ip: 5.148.172.17 }
     # Hosts
-    - {name: nica.nickyeoman.com, ip: 192.168.69.212 }
+    - {name: vbox.nickyeoman.com, ip: 192.168.69.200 }
+    - {name: kendra.nickyeoman.com, ip: 192.168.69.202 }
+    - {name: stage.nickyeoman.com, ip: 192.168.69.203 }
+    - {name: nas.nickyeoman.com, ip: 192.168.69.210 }
     - {name: nixbuntu.nickyeoman.com, ip: 192.168.69.215 }
     - {name: danica.nickyeoman.com, ip: 192.168.69.216 }
-    - {name: kendra.nickyeoman.com, ip: 192.168.69.202 }
-    - {name: gate.nickyeoman.com, ip: 192.168.69.200 }
-    - {name: nas.nickyeoman.com, ip: 192.168.69.210 }
+    - {name: cx2.nickyeoman.com, ip: 192.168.69.249 }
     # Internal Applications
     - {name: chat.nickyeoman.com, ip: 192.168.69.215 }
     # Local Applications
-    - {name: portainer.nickyeoman.com, ip: 127.0.0.1 }
-    - {name: proxy.nickyeoman.com, ip: 127.0.0.1 }
-    - {name: passbolt.nickyeoman.com, ip: 127.0.0.1 }
-    - {name: nextcloud.nickyeoman.com, ip: 127.0.0.1 }
+    - {name: manage.nick.com, ip: 192.168.69.203 }
+    - {name: proxy.nick.com, ip: 192.168.69.203 }
+    - {name: passbolt.nick.com, ip: 192.168.69.203 }
+    - {name: nextcloud.nick.com, ip: 192.168.69.203 }
+    - {name: db.nick.com, ip: 192.168.69.203 }
+    - {name: cb.nick.com, ip: 192.168.69.203 }
+    - {name: al.nick.com, ip: 192.168.69.203 }
+    - {name: bookstack.nick.com, ip: 192.168.69.203 }
+    - {name: gitea.nick.com, ip: 192.168.69.203 }
+    - {name: yourls.nick.com, ip: 192.168.69.203 }
+    - {name: analytics.nick.com, ip: 192.168.69.203 }

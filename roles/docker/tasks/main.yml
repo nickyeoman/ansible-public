@@ -1,0 +1,13 @@
+###############################################################################
+# Docker
+#
+# A useful guide:
+# https://docs.ansible.com/ansible/latest/scenario_guides/guide_docker.html
+###############################################################################
+- name: Build image and with build args
+  docker_image:
+    name: nick/ubuntu-apache-php:latest
+    build:
+      path: /home/nick/Git/docker-cookbooks/build/ubuntu-apache-php/
+      pull: yes
+    source: build

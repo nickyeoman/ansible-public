@@ -15,6 +15,7 @@
     - etchosts
     - git_repos
     - git_user
+    - docker
     - hugo
     - timezone
 
