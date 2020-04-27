@@ -1,0 +1,5 @@
+# playbook
+#
+- hosts: virtualbox
+  roles:
+    - virtualbox

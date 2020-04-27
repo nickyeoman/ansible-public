@@ -1,2 +1,20 @@
 # https://download.virtualbox.org/virtualbox/debian/dists/
 # waiting for 20.04
+# got from here: https://github.com/cjsteel/ansible-role-virtualbox/blob/master/defaults/main.yml
+# and here: https://linuxize.com/post/how-to-install-virtualbox-on-ubuntu-18-04/#installing-virtualbox-from-oracle-repositories
+
+- name: "Add oracle virtualbox oracle apt key 1"
+  apt_key: url="https://www.virtualbox.org/download/oracle_vbox_2016.asc" state=present
+
+- name: "Add oracle virtualbox oracle apt key 2"
+  apt_key: url="https://www.virtualbox.org/download/oracle_vbox.asc" state=present
+
+- name: Add virtualbox repository to sources
+  apt_repository: repo="deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian {{ansible_distribution_release}} contrib" state=present mode="0644"
+
+- name: Install virtualbox
+  apt: name="virtualbox-6.1" state=present update_cache=yes
+
+# Don't use virtualbox-dkms
+- name: Install virtualbox dkms package
+  apt: name="dkms" state=present

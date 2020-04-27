@@ -25,3 +25,7 @@
     - simplescreenrecorder
     - xfce
     - nextcloud-client
+
+- hosts: virtualbox
+  roles:
+    - virtualbox

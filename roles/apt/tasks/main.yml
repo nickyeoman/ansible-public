@@ -16,6 +16,9 @@
       - netdata
       - zip
       - engrampa
+      # pdf
+      - ocrmypdf
+      - poppler-utils
       # used in alias'
       - pwgen
       # for traefik
