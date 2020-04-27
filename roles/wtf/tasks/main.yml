@@ -1,0 +1,35 @@
+---
+
+- name: ensure nick directory exists
+  file:
+    path: /home/nick/.config/wtf
+    state: directory
+    owner: nick
+    group: nick
+
+- name: ensure root directory exists
+  file:
+    path: /root/.config/wtf
+    state: directory
+    owner: root
+    group: root
+
+- name: install wtfutils
+  copy:
+    src: wtfutil
+    dest: /usr/local/bin/wtfutil
+
+- name: install wtfutils config for nick
+  copy:
+    src: config.yml
+    dest: /home/nick/.config/wtf/config.yml
+
+- name: install wtfutils config for root
+  copy:
+    src: config.yml
+    dest: /root/.config/wtf/config.yml
+
+- name: make executable
+  file:
+    path: /usr/local/bin/wtfutil
+    mode: a+x
