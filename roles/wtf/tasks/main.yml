@@ -19,6 +19,12 @@
     src: wtfutil
     dest: /usr/local/bin/wtfutil
 
+- name: install scripts for wtf
+  copy:
+    src: wtf-ds
+    mode: a+x
+    dest: /usr/local/bin/wtf-ds
+
 - name: install wtfutils config for nick
   copy:
     src: config.yml

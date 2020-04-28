@@ -1,0 +1,73 @@
+wtf:
+  colors:
+    border:
+      focusable: limegreen
+      focused: yellow
+      normal: darkgreen
+  grid:
+    #187x55
+    columns: [1,20,20,20,20,20,20,20,20,20,7,90]
+    rows: [1,3,5,5,5,5,5,5,5,5,5,5,5,90]
+  refreshInterval: 1
+  mods:
+    git-public:
+      type: "git"
+      commitCount: 5
+      commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
+      dateFormat: "%H:%M %d %b %y"
+      enabled: true
+      position:
+        top: 1
+        left: 1
+        height: 5
+        width: 4
+      refreshInterval: 500
+      title: "Git Repos"
+      repositories:
+      - "/home/nick/Git/ansible-public"
+    git-private:
+      type: "git"
+      commitCount: 5
+      commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
+      dateFormat: "%H:%M %d %b %y"
+      enabled: true
+      position:
+        top: 6
+        left: 1
+        height: 5
+        width: 4
+      refreshInterval: 500
+      title: "Git Repos"
+      repositories:
+      - "/home/nick/Git/ansible-private"
+    git-docker:
+      type: "git"
+      commitCount: 5
+      commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
+      dateFormat: "%H:%M %d %b %y"
+      enabled: true
+      position:
+        top: 1
+        left: 5
+        height: 5
+        width: 4
+      refreshInterval: 500
+      title: "Git Repos"
+      repositories:
+      - "/home/nick/Git/docker-cookbooks"
+    git-nick:
+      type: "git"
+      commitCount: 5
+      commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
+      dateFormat: "%H:%M %d %b %y"
+      enabled: true
+      position:
+        top: 6
+        left: 5
+        height: 5
+        width: 4
+      refreshInterval: 500
+      title: "Git Repos"
+      repositories:
+      - "/home/nick/Git/websites/nickyeoman"
+      

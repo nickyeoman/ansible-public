@@ -1,1 +1,67 @@
-#filler
+#!/bin/bash
+# Global Bash Aliases
+# Frostybot Version: 5
+# Last Updated: Apr. 28, 2020
+
+################################################################################
+# Aliases
+################################################################################
+
+# Typos
+alias whios='whois'
+
+# Dashboards
+alias weather='curl http://wttr.in/summerland'
+alias wtf='wtfutil'
+alias wtfgit='wtfutil --config=/home/nick/.config/wtf/git-config.yml'
+
+# Sysadmin
+alias s='sudo su'
+# https://unix.stackexchange.com/questions/267562/show-only-physical-disks-when-using-df-and-mount
+alias ds='df -h --type btrfs --type ext4 --type ext3 --type ext2 --type vfat --type iso9660' # show only physical drives
+alias ch='du -hcd 1 . | sort -h' # directorys by size, but usual ncdu is better
+alias wifi='nmcli dev wifi'
+
+# Generate password
+alias passgen='pwgen -cnsB1v 12'
+
+# should work for all GUIs
+alias window='xdg-open .'
+alias win='xdg-open .'
+# ls long hidden and human readable
+alias ll='ls -lah'
+alias l1='ls -1'
+alias ls='ls --color=auto'
+# up levels (up #_of_dir_up)
+function cd_up() {
+  cd $(printf "%0.0s../" $(seq 1 $1));
+}
+alias 'up'='cd_up'
+
+# run updates
+alias updates='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove && sudo apt-get clean && sudo apt-get autoclean && sudo apt autoclean'
+
+# or just ctrl+d
+alias quit='exit'
+alias e='exit'
+
+# tmux
+alias t='tmux a -t nix || tmux new -s nix'
+alias tl='tmux list-sessions'
+
+# Git
+alias gs='git status' #hope you don't use ghostscript
+alias gpgp='git pull;git push;'
+alias gitcola='git-cola'
+alias gc='git-cola'
+alias gitclean='git reset --hard HEAD; git clean -df'
+alias gclean='git reset --hard HEAD; git clean -df'
+alias gfc='git add .;git commit -m"fast commit";git pull;git push;'
+
+# Ubuntu version
+alias version='lsb_release -a'
+
+# Virtualbox
+# https://www.nickyeoman.com/blog/linux/headless-virutalbox/
+alias vls='echo "Available VMs"; VBoxManage list vms; echo "Running VMs"; VBoxManage list runningvms' # list virtualbox instances
+alias vstart='VBoxManage startvm --type headless $1'

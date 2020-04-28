@@ -19,6 +19,7 @@
       - thunderbird
       - fonts-noto-color-emoji
       - recordmydesktop
+      - network-manager
       # pdf viewer
       - okular
       # for xubuntu users
