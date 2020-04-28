@@ -7,8 +7,6 @@
       {{ item.ip }} {{ item.name }}
     marker: '# {mark} ANSIBLE MANGED BLOCK {{ item.name }}'
   loop:
-    # Production
-    - {name: gitea.nickyeoman.com, ip: 5.148.172.17 }
     # Hosts
     - {name: vbox.nickyeoman.com, ip: 192.168.69.200 }
     - {name: kendra.nickyeoman.com, ip: 192.168.69.202 }
@@ -17,17 +15,3 @@
     - {name: nixbuntu.nickyeoman.com, ip: 192.168.69.215 }
     - {name: danica.nickyeoman.com, ip: 192.168.69.216 }
     - {name: cx2.nickyeoman.com, ip: 192.168.69.249 }
-    # Internal Applications
-    - {name: chat.nickyeoman.com, ip: 192.168.69.215 }
-    # Local Applications
-    - {name: manage.nick.com, ip: 192.168.69.203 }
-    - {name: proxy.nick.com, ip: 192.168.69.203 }
-    - {name: passbolt.nick.com, ip: 192.168.69.203 }
-    - {name: nextcloud.nick.com, ip: 192.168.69.203 }
-    - {name: db.nick.com, ip: 192.168.69.203 }
-    - {name: cb.nick.com, ip: 192.168.69.203 }
-    - {name: al.nick.com, ip: 192.168.69.203 }
-    - {name: bookstack.nick.com, ip: 192.168.69.203 }
-    - {name: gitea.nick.com, ip: 192.168.69.203 }
-    - {name: yourls.nick.com, ip: 192.168.69.203 }
-    - {name: analytics.nick.com, ip: 192.168.69.203 }
