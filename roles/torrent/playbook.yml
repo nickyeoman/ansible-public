@@ -1,0 +1,5 @@
+# playbook
+#
+- hosts: torrent
+  roles:
+    - torrent

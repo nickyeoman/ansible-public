@@ -9,6 +9,7 @@
       - iftop
       - whois
       - ncdu
+      - mariadb-client-core-10.1
       - jq
       - lynx
       - zsh

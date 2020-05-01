@@ -1,0 +1,28 @@
+---
+###############################################################################
+# v1
+#
+# author: Nick Yeoman
+#
+###############################################################################
+
+# TODO: This doesn't work as you need to hit "enter"
+- name: ppa key qbittorrent
+  apt_repository:
+    repo: 'ppa:qbittorrent-team/qbittorrent-stable'
+
+- name: Update cache & Install atom
+  apt:
+    update_cache: yes
+    name: atom
+
+- name: install qbittorrent
+  apt:
+    state: latest
+    pkg:
+    - qbittorrent
+    - qbittorrent-nox
+
+# https://www.linuxbabe.com/ubuntu/install-qbittorrent-ubuntu-18-04-desktop-server
+# adduser --system --group qbittorrent-nox
+# adduser your-username qbittorrent-nox

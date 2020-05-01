@@ -9,6 +9,7 @@
   loop:
     # Hosts
     - {name: vbox.nickyeoman.com, ip: 192.168.69.200 }
+    - {name: tor.nickyeoman.com, ip: 192.168.69.204 }
     - {name: kendra.nickyeoman.com, ip: 192.168.69.202 }
     - {name: stage.nickyeoman.com, ip: 192.168.69.203 }
     - {name: nas.nickyeoman.com, ip: 192.168.69.210 }

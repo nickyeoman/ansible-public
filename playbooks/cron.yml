@@ -29,3 +29,7 @@
 - hosts: virtualbox
   roles:
     - virtualbox
+
+- hosts: torrent
+  roles:
+    - torrent

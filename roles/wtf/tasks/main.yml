@@ -1,5 +1,7 @@
 ---
 
+# TODO: clean up this file with some loops
+
 - name: ensure nick directory exists
   file:
     path: /home/nick/.config/wtf
@@ -22,13 +24,22 @@
 - name: install scripts for wtf
   copy:
     src: wtf-ds
-    mode: a+x
     dest: /usr/local/bin/wtf-ds
+
+- name: make executable
+  file:
+    path: /usr/local/bin/wtf-ds
+    mode: a+x
 
 - name: install wtfutils config for nick
   copy:
     src: config.yml
     dest: /home/nick/.config/wtf/config.yml
+
+- name: install wtfutils git config for nick
+  copy:
+    src: git-config.yml
+    dest: /home/nick/.config/wtf/git-config.yml
 
 - name: install wtfutils config for root
   copy:

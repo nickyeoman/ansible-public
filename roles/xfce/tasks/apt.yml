@@ -24,6 +24,21 @@
       - okular
       # for xubuntu users
       - lxd
+      # From xfce4 install
+      - xfce4
+      - xfce4-whiskermenu-plugin
+      - mugshot
+      # Screensavers
+      - xscreensaver
+      - xscreensaver-gl-extra
+      - xscreensaver-data-extra
+      #virtualbox tools
+      - make
+      - gcc
+      - xorg-video-abi-23
+      - virtualbox-guest-dkms
+      - virtualbox-guest-utils
+      - virtualbox-guest-x11
     state: present
 
 #csstidy
