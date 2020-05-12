@@ -17,6 +17,8 @@
       - netdata
       - zip
       - engrampa
+      - fish
+      - mosh
       # pdf
       - ocrmypdf
       - poppler-utils
