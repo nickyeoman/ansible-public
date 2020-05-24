@@ -2,6 +2,7 @@
 - name: Install packages using apt
   apt:
     pkg:
+      - ansible
       - nmap
       - p7zip-full
       - p7zip-rar
